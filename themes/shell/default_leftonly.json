@@ -7,7 +7,7 @@
 				"only_if_ssh": true
 			}
 		},
-		"virtualenv": {
+		"environment": {
 			"before": "ⓔ  "
 		},
 		"branch": {
@@ -23,7 +23,10 @@
 				"name": "user"
 			},
 			{
-				"name": "virtualenv"
+				"name": "environment",
+                "args": {
+                    "variable": "MOCA_ENVNAME"
+                }
 			},
 			{
 				"name": "branch",
